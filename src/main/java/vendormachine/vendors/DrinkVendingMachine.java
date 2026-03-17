@@ -10,8 +10,8 @@ import java.util.Collections;
 
 public class DrinkVendingMachine {
 
-    private BRANDS brandName = null;
-    private float availableCredit = 0;
+    public BRANDS brandName = null;
+    public float availableCredit = 0;
     private ArrayList<Snack> drinkList = new ArrayList<Snack>();
 
     public DrinkVendingMachine(){
@@ -65,7 +65,7 @@ public class DrinkVendingMachine {
 
     public void giveCredit(Person user, float credit){
         //TODO replace with Log4j
-        System.out.println("INFO: You have entered £"+credit);
+        System.out.println("INFO: You have entered ï¿½"+credit);
         this.availableCredit += user.getCredit(credit);
     }
 
